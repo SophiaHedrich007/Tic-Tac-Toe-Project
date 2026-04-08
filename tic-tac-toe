@@ -1,0 +1,108 @@
+def create_board():
+    """
+    Creates and returns a new 3x3 Tic-Tac-Toe board.
+    The board is a list of lists.
+    Each empty cell is represented by a space " ".
+    """
+    pass
+
+def print_board(board):
+    """
+    Displays the board in a clean, labeled format.
+    This makes it easier for players to understand which row/column to enter.
+    """
+    pass
+
+def check_winner(board, player):
+    """
+    Checks whether the given player ("X" or "O") has won.
+    A win can happen in:
+    - any row
+    - any column
+    - either diagonal
+    Returns True if the player has won, otherwise False.
+    """
+    pass
+
+def is_draw(board):
+    """
+    A draw happens when the board is completely full and no one has won.
+    If an cell still contains a blank space, the game is not a draw yet.
+    """
+    pass
+
+def get_valid_number(prompt, minimum, maximum):
+    """
+    Repeatedly asks the user for a number until they enter a valid integer
+    within the allowe range [minimum, maximum].
+
+    This improved input validation and prevents crashes from invalid input.
+    """
+    pass
+
+def get_move(board, player):
+    """
+    Gets a valid more from the current player.
+    The move must:
+    - use row and column values between 0 and 2
+    - target an empty cell only
+
+    Returns a tuple: (row, col)
+    """
+    pass
+
+def switch_player(current_player):
+    """
+    Switches the current player from X to O or from O to X.
+    """
+    pass
+
+def print_scoreboard(x_wins, o_wins, draws):
+    """
+    Displays the running score across multiple rounds.
+    """
+    pass
+
+def ask_play_again():
+    """
+    Asks whether the players want to play another round.
+    Accepts only yes/no style answers.
+    Returns True if they want to continue, otherwise False.
+    """
+    pass
+
+def play_one_game():
+    """
+    Plays one complete round of Tic-Tac-Toe.
+
+    Returns:
+    - "X" if player X wins
+    - "O" if player O wins
+    - "D" if the game ends in a draw
+    """
+    pass
+
+def main():
+    """
+    Main program controller.
+
+    Features included:
+    - welcoming game introduction
+    - multiple rounds
+    - scoreboard tracking
+    - replay support
+    """
+    x_wins = 0
+    o_wins = 0
+    draws = 0
+
+    print("=" * 40)
+    print("     TIC-TAC-TOE: TERMINAL EDITION")
+    print("=" * 40)
+    print("Rules:")
+    print("1. Two players take turns as X and O.")
+    print("2. Enter row and column values from 0 to 2.")
+    print("3. First player to get 3 in a row wins.")
+    print("4. If the board fills with no winner, it is a draw.\n")
+
+main()
